@@ -1,9 +1,10 @@
+import os
 import faiss
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-8156b15070f34741b4cb9dca5eb55fb7",
+    api_key=os.getenv("OPENAI_API_KEY"),
     base_url="https://api.deepseek.com/v1"
 )
 
