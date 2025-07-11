@@ -6,3 +6,4 @@ openai~=1.85.0
 sentence-transformers
 gunicorn
 faiss-cpu
+flask-cors
